@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    background-image: url(poster.jpg);
+}
+
+
+nav {
+    background-color: black;
+    padding: 15px;
+    z-index: 9999;
+    box-shadow: 0 0 5px;
+}
+
+.logo-container {
+    display: inline-block;
+}
+
+.link-container {
+    float: right;
+    position: relative;
+    top: 15px;
+}
+
+.link {
+    padding: 10px 25px;
+    color: #fff;
+    text-decoration: none;
+    font-family: Verdana;
+    margin: 0 15px;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+
+.search {
+    width: 240px;
+    height: 25px;
+    padding: 6px 7px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.link:hover {
+    background-color: rgb(164, 217, 235);
+    color: black;
+}
+
+main {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('image.png') no-repeat center center/cover;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+footer {
+
+    background-color: black;
+
+}
+
+.social-network {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-network li {
+    margin: 0 10px;
+}
+
+.social-network a {
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background-color: #84b8ed; 
+    transition: transform 0.2s, background-color 0.8s;
+}
+
+.social-network a:hover {
+    transform: rotate(360deg);
+}
+
+
+.insta:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.fb:hover {
+    background-color: #3B5998;
+}
+
+.twitter:hover {
+    background-color: #33ccff;
+}
+
+.google:hover {
+    background-color: #BD3518;
+}
